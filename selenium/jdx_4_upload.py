@@ -131,8 +131,8 @@ for code in all_code:
             "itemName": f"{attributeTypeName_color} {size}",
             "originalPrice": originalPrice,
             "salePrice": salePrice,
-            "maximumBuyCount": 30,
-            "maximumBuyForPerson": 30,
+            "maximumBuyCount": 20,
+            "maximumBuyForPerson": 20,
             "outboundShippingTimeDay": 4,
             "maximumBuyForPersonPeriod": 1,
             "unitCount": 1,
@@ -147,12 +147,9 @@ for code in all_code:
             # "emptyBarcodeReason": "상품확인불가_바코드없음사유",
             # "modelNo": "1717171",
             # "extraProperties": null,
-            # "certifications": [
-            #   {
-            # 	"certificationType": "NOT_REQUIRED",
-            # 	"certificationCode": ""
-            #   }
-            # ],
+            "certifications": [
+                {"certificationType": "NOT_REQUIRED", "certificationCode": ""}
+            ],
             "searchTags": [
                 "jdx",
                 "JDX",
@@ -219,7 +216,7 @@ for code in all_code:
     # replace with your own accesskey
     accesskey = "8d837660-c380-4673-83f9-b1a5d5b4fbba"
     # replace with your own secretKey
-    secretkey = "b5c9176c28a82fda9dc26669f16f196ce9350a2f"
+    secretkey = "271cc77c4edd8202dc70bcada9c9f0e0a914012e"
 
     # ********************************************************#
     # authorize, demonstrate how to generate hmac signature here

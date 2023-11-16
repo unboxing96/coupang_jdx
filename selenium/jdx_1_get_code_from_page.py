@@ -20,7 +20,7 @@ all_code = {}
 
 # change page_num (should be <= 15) (last page + 1)
 num = 1  # start page
-endpage_num = 10
+endpage_num = 7
 
 e_list = []
 c_list = []
@@ -28,7 +28,9 @@ c_list = []
 while True:
     if num == endpage_num:
         break
-    driver.get(f"https://www.jdx.co.kr/goods/goods_list.php?page={num}&cateCd=002")
+    driver.get(
+        f"https://jdx.co.kr/goods/goods_search.php?page={num}&keyword=U5&recentCount=10"
+    )
     time.sleep(1)
     codes = driver.find_elements(By.CLASS_NAME, "item_name")
     elems_parent = driver.find_elements(By.CLASS_NAME, "item_photo_box")
